@@ -3,6 +3,7 @@ title: "A Woolworth Case Study"
 author: "Yue Cao"
 date: "2025-08-17"
 categories: [news, code, analysis]
+image: "image1.png"
 
 ---
 
