@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "CNEN"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Yue Cao",
@@ -12,12 +19,5 @@
     "title": "About",
     "section": "",
     "text": "About this site"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
-    "section": "",
-    "text": "CNEN"
   }
 ]
