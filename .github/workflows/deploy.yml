@@ -1,46 +1,33 @@
-# 文件名: .github/workflows/deploy.yml
-
-name: Deploy Quarto Website # 工作流的名称，会显示在 GitHub Actions 页面
-
-# 触发条件：在 'main' 分支上发生 push 事件时触发
-# 'workflow_dispatch' 允许你从 Actions 页面手动触发此工作流
 on:
-  push:
-    branches: [ site ]
   workflow_dispatch:
+  push:
+    branches: site
 
-# 作业（Jobs）
+name: Quarto Publish
+
 jobs:
-  deploy:
-    runs-on: ubuntu-latest # 使用最新的 Ubuntu 虚拟机环境
+  build-deploy:
+    runs-on: ubuntu-latest
     permissions:
-      pages: write      # 授予工作流向 GitHub Pages 写入的权限
-      id-token: write   # 授予工作流请求 OpenID Connect (OIDC) 令牌的权限，用于安全部署
-
+      contents: write
     steps:
-      # 第 1 步：检出（Checkout）你的仓库代码
       - name: Check out repository
         uses: actions/checkout@v4
 
-      # 第 2 步：设置 Quarto 环境
       - name: Set up Quarto
-        uses: quarto-dev/quarto-cli-action@v2
-        # with:
-        #   version: "1.4.550" # 可以指定一个具体的 Quarto 版本
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      # 第 3 步：渲染 Quarto 网站
-      # 这会执行 `quarto render` 命令，默认将 HTML 输出到 _site 文件夹
-      - name: Render Quarto Website
-        run: quarto render
-
-      # 第 4 步：上传构建产物（Artifact）
-      # 将 _site 文件夹打包，以便 deploy-pages 作业可以使用
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Install Python and Dependencies
+        uses: actions/setup-python@v5
         with:
-          path: _site
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install jupyter
+      - run: pip install -r requirements.txt
 
-      # 第 5 步：部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
