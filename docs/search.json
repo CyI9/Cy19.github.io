@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Teddy’s Data Science Space",
+    "section": "",
+    "text": "I Love Data Science\n    \n    \n        Author: Cy19\n    \n    \n        \n      Date: October 6, 2025"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Teddy’s Data Science Space",
+    "section": "Introduction",
+    "text": "Introduction\nQuarto is probably my favorite tool in the R/Python universe. Transforming your code and thoughts into a stunning report in one click always blows my mind.\nWhile the default Quarto appearance looks great, there are a few tweaks I always apply to elevate the report even further. Rather than manually adding them each time, I bundled everything into a custom format called lumo.\n\n\nBtw, you can learn how to master Quarto thanks to my online course: Productive R Workflow\nThis document aims at showcasing how a quarto document made with the lumo format looks like."
+  },
+  {
+    "objectID": "index.html#documentation",
+    "href": "index.html#documentation",
+    "title": "Teddy’s Data Science Space",
+    "section": "Documentation",
+    "text": "Documentation\nThe documentation for this quarto custom format is available here"
+  }
+]
