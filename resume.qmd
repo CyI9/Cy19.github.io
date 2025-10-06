@@ -1,0 +1,21 @@
+---
+title: Resume
+---
+
+
+:::{.panel-tabset}
+
+## CN
+<iframe 
+  width="800" 
+  height="800" 
+  src="images/CY_CN.pdf">
+</iframe>
+
+## EN
+
+<iframe 
+  width="800" 
+  height="800" 
+  src="images/CY_EN.pdf">
+</iframe>

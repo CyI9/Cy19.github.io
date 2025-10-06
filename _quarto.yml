@@ -1,3 +1,26 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
+
+website:
+  title: "Yue Cao"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - href: resume.qmd
+        text: Resume
+      - href: project.qmd
+        text: Project
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+

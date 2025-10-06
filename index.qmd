@@ -1,40 +1,23 @@
 ---
-title: "Teddy's Data Science Space"
-subtitle: "I Love Data Science"
-format:
-  lumo-html: 
-    # logo: "logo.png"                                     # Optional. Path to a logo displayed above the title
-    # github-repo: "https://github.com/holtzy/lumo"        # Optional. Adds a github corner at the top right
-    primary-color: "#69b3a2"
-    self-contained: true
-    is-particlejs-enabled: true                          # Optional: display interactive particles in the document header
-    bg-image: ""                                         # Optional: link to an image for the header background
-author: Cy19
-date: last-modified
+title: "Yue Cao"
+image: images/linkedinpic.jpg
+about:
+  template: jolla
+  image-width: 20em
+  image-shape: round
+
 ---
 
+<!-- 我拥有工科本科和商科硕士的复合背景，这让我既能深入技术细节，也总能想着如何服务于商业目标。 -->
 
+<!-- 我熟练使用Python进行数据分析和机器学习建模，也喜欢通过数据可视化把复杂的数据结果，变成一目了然的图表讲给团队听。我非常享受在发现问题、验证想法的过程中遇到的种种挑战。 -->
 
+<!-- 我相信数据最大的价值在于应用，也愿意与团队一起用数据为业务决策提供实在、有力的支持。 -->
 
-## Introduction
+I am a graduate student in BIS at the Australian National University. I can delve into technical details while always keeping business objectives in mind.
 
-Quarto is probably my favorite tool in the R/Python universe. Transforming your code and thoughts into a stunning report in one click always blows my mind.
+I am proficient in using Python for data analysis and machine learning modeling, and I enjoy transforming complex data results into clear, understandable charts for the team through data visualization. I truly enjoy the challenges that come with identifying problems and validating ideas.
 
-While the default Quarto appearance **looks great**, there are [a few tweaks](https://www.productive-r-workflow.com/quarto-tricks) I always apply to elevate the report even further. Rather than manually adding them each time, I bundled everything into a custom format called `lumo`.
-
-
-::: {.column-margin}
-
-Btw, you can learn how to master Quarto thanks to my online course: [Productive R Workflow](https://www.productive-r-workflow.com)
-
-:::
-
-
-This document aims at showcasing how a quarto document made with the `lumo` format looks like.
-
-
-## Documentation
-
-The documentation for this quarto custom format is available [here](https://www.productive-r-workflow.com/r/bonus/lumo-quarto-template)
+I believe the greatest value of data lies in its application, and I am eager to work with the team to provide solid, powerful support for business decisions through data.
 
 
