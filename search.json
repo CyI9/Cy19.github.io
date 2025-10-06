@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Resume",
@@ -12,12 +19,5 @@
     "title": "Yue Cao",
     "section": "",
     "text": "I am a graduate student in BIS at the Australian National University. I can delve into technical details while always keeping business objectives in mind.\nI am proficient in using Python for data analysis and machine learning modeling, and I enjoy transforming complex data results into clear, understandable charts for the team through data visualization. I truly enjoy the challenges that come with identifying problems and validating ideas.\nI believe the greatest value of data lies in its application, and I am eager to work with the team to provide solid, powerful support for business decisions through data."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]
