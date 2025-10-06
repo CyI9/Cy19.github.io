@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Yue Cao"
+  site-url: https://cyi9.github.io/Cy19.github.io/
   navbar:
     left:
       - href: index.qmd
